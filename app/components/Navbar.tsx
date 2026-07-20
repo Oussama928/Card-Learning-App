@@ -303,15 +303,13 @@ const Navbar = () => {
           </div>
           <div className="flex flex-1 items-center justify-center md:items-stretch md:justify-center">
             <div className="flex shrink-0 items-center">
-              <Link href="/" onClick={() => setPicked("official")}>
-                <Image
-                  src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg"
-                  alt="TikTok Logo"
-                  width={100}
-                  height={100}
-                  className="h-8 w-auto"
-                  unoptimized
-                />
+              <Link href="/" onClick={() => setPicked("official")} className="flex items-center space-x-2">
+                <svg className="w-8 h-8 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                  <rect x="2" y="4" width="20" height="16" rx="2" />
+                  <path d="M6 12h12" />
+                  <path d="M12 8v8" />
+                </svg>
+                <span className="text-xl font-semibold text-gray-900 dark:text-white">CardLearn</span>
               </Link>
             </div>
             <div className="hidden sm:ml-6 md:block">
